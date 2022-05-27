@@ -69,4 +69,6 @@ lower_frame.place(relx=0.5, rely=0.25, relwidth=0.75, relheight=0.6, anchor='n')
 label1 = tk.Label(lower_frame, bg='#ffb3cc', font=('arial', 18))
 label1.place(relwidth=1, relheight=1)
 
+app.bind('<Return>', lambda event: get_cases(entry.get())) #for the keybind "Enter" of the track button :)
+
 app.mainloop()
